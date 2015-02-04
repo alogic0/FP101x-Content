@@ -227,122 +227,123 @@ para nos ajudar a programar o computador.
 
 49
 00:03:04,420 --> 00:03:08,660
-If we don't use that, that would be
-stupid. GHC
+Se não o usarmos, seria estúpido.
+GHC
 
 50
 00:03:08,660 --> 00:03:14,079
-is freely available from the website
-here. The link will be also be on the
+está gratuitamente disponível no website
+aqui. O link estará também no
 
 51
 00:03:14,079 --> 00:03:17,880
-course website, and you can also
+website do curso, e vocês podem também
 
 52
 00:03:17,880 --> 00:03:21,220
-Google or Bing for the Haskell platform
+usar o Google ou Bing para buscar
+sobre a plataform Haskell
 
 53
 00:03:21,220 --> 00:03:24,780
-and it's available for all major
-platforms
+que está disponível para as principais
+plafatormas
 
 54
 00:03:24,780 --> 00:03:29,910
-Mac, Windows and Linux.
-To start GHC,
+Mac, Windows e Linux.
+Para iniciar o GHC,
 
 55
 00:03:29,910 --> 00:03:33,840
-you just type from the command line 'ghci'
+apenas digite a linha de comando 'ghci'
 
 56
 00:03:33,840 --> 00:03:37,549
-and then you get some
+e então vocês terão um
 
 57
 00:03:37,549 --> 00:03:41,230
-text blurps and there you see a prompt
+texto surgindo e verão um prompt
 
 58
 00:03:41,230 --> 00:03:44,970
-Prelude> and that's where you can start
-typing in
+Prelude> e que é onde vocês podem
+começar a digitar
 
 59
 00:03:44,970 --> 00:03:49,180
-expressions. For example we can type in
-the expression
+expressões. Por exemplo, podemos digitar
+a expressão
 
 60
 00:03:49,180 --> 00:03:53,150
-2 + 3 * 4 and
+2 + 3 * 4 e
 
 61
 00:03:53,150 --> 00:03:57,690
-GHCi will then print the result for that.
-In this case we're really using
+o GHCI imprimirá então o resultado da expressão.
+Neste caso estamos realmente usando
 
 62
 00:03:57,690 --> 00:04:01,380
-GHCi as kind of a calculator.
+o GHCi como um tipo de calculadora.
 
 63
 00:04:01,380 --> 00:04:05,250
-It's a little bit like a calculator
-on the command line interface,
+É como uma pequena calculadora
+na interface de linha de comando,
 
 64
 00:04:05,250 --> 00:04:10,340
-instead of a calculator with buttons.
-What we also see here is that since
+em vez de uma calculdora com botões.
+O que vemos também é que desde que
 
 65
 00:04:10,340 --> 00:04:13,680
-2 + 3 * 4 apparently is 14
+2 + 3 * 4 é aparentemente 14
 
 66
 00:04:13,680 --> 00:04:17,459
-that multiplication binds stronger
+a multiplicação é mais forte do que
 
 67
 00:04:17,459 --> 00:04:20,640
-than addition. So there's no surprises
-there as
+a adição. Assim, não há surpresas 
+aqui pois
 
 68
 00:04:20,640 --> 00:04:24,450
-most languages have that.
-If we want to
+a maioria das linguagens tem isso.
+Se queremos
 
 69
 00:04:24,450 --> 00:04:28,450
-first do the addition and then
-the multiplication, we have to put
+fazer a adição primeiro e depois
+a multiplicação, temos que colocar
 
 70
 00:04:28,450 --> 00:04:31,510
-parentheses, so we write
+parêntesis, assim escrevemos
 (2 + 3) * 4
 
 71
 00:04:31,510 --> 00:04:35,910
-and then the result is 20.
-We can do
+e então o resultado é 20.
+Podemos fazer
 
 72
 00:04:35,910 --> 00:04:40,880
-more complicated expressions like the
-square root of (3 ^ 2 + 4 ^2)
+expressões mais complicadas como a
+raiz quadrada de (3 ^ 2 + 4 ^2)
 
 73
 00:04:41,630 --> 00:04:46,690
-and we get 5.
+e obtemos 5.
 
 74
 00:04:46,690 --> 00:04:50,100
-As you saw, there was the
+Como vocês viram, existe o 
 Prelude>
 
 75
@@ -351,41 +352,41 @@ prompt
 
 76
 00:04:53,490 --> 00:04:58,260
-here. So the Haskell Prelude it's like
-the SDK for Haskell. These are all the
+aqui. Assim, o Haskell Prelude é como
+o SDK para Haskell. Estas são todas as
 
 77
 00:04:58,260 --> 00:04:59,390
-standard functions
+funções padrões
 
 78
 00:04:59,390 --> 00:05:03,330
-that come for free with Haskell.
-On the website
+que vem de graça com Haskell.
+No website
 
 79
 00:05:03,330 --> 00:05:07,930
-we will tell you how to get
-other libraries for Haskell,
+falaremos à vocês como obter
+outras bibliotecas para Haskell,
 
 80
 00:05:07,930 --> 00:05:13,620
-but we won't discuss that in too much
-detail right here. You
+mas não iremos discutir isso em muitos
+detalhes aqui. Vocês
 
 81
 00:05:13,620 --> 00:05:16,740
 you can read up on that.
-We will
+Tentaremos
 
 82
 00:05:16,740 --> 00:05:20,840
-will try to stick with just the
-standard library functions - the standard
+ficar apenas com as funções da 
+biblioteca padrão - o prelude
 
 83
 00:05:20,840 --> 00:05:21,390
-prelude.
+padrão.
 
 84
 00:05:21,390 --> 00:05:27,680
