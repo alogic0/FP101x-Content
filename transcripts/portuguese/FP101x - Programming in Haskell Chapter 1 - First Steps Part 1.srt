@@ -357,7 +357,7 @@ o SDK para Haskell. Estas são todas as
 
 77
 00:04:58,260 --> 00:04:59,390
-funções padrões
+funções padrão
 
 78
 00:04:59,390 --> 00:05:03,330
@@ -390,137 +390,136 @@ padrão.
 
 84
 00:05:21,390 --> 00:05:27,680
-A lot of the functions in the prelude
+Muitas das funões no prelude
 
 85
 00:05:27,680 --> 00:05:30,710
-are functions over lists.
+são funções de listas.
 
 86
 00:05:30,710 --> 00:05:34,750
-We're going to walk through a
-couple of them and then in later lectures
+Vamos passar por algumas
+delas e então mais tarde no curso
 
 87
 00:05:34,750 --> 00:05:38,810
-we will implemented these functions in
-several different
+implementaremos estas funções
+de várias maneiras
 
 88
 00:05:38,810 --> 00:05:42,500
-manners. The first function here is head,
-which takes a list,
+diferentes. A primeira função aqui é a head,
+que recebe uma lista,
 
 89
 00:05:42,500 --> 00:05:46,350
-and the way we write lists in Haskell
-is with square brackets and the
+a forma de escrevermos uma lista em Haskell
+é com colchetes e os
 
 90
 00:05:46,350 --> 00:05:48,280
-elements separated by commas,
+elementos separados por vírgula,
 
 91
 00:05:48,280 --> 00:05:52,030
-so the head of [1,2,3,4,5] is
+então a head de [1,2,3,4,5] é
 
 92
 00:05:52,030 --> 00:05:56,110
-unsurprisingly 1.
-The tail,
+sem dúvida 1.
+O tail,
 
 93
 00:05:56,110 --> 00:06:00,130
-that's the opposite of head, so is
-everything on the list
+o oposto de head, é
+tudo na lista
 
 94
 00:06:00,130 --> 00:06:03,340
-except the head, so the tail of [1,2,3,4,5]
+exceto o head, então o tail de [1,2,3,4,5]
 
 95
 00:06:03,340 --> 00:06:07,710
-is the list [2,3,4,5].
-We can also select
+é a lista [2,3,4,5].
+Podemos também selecionar
 
 96
 00:06:07,710 --> 00:06:11,360
-the n-th element of the list with
-this
+o n-th elemento de uma lista com
+este operador
 
 97
 00:06:11,360 --> 00:06:16,250
-double exclamation mark operator.
-If we want to select the second element
+de dois pontos de exclamações.
+Se queremos selecionar o segundo elemento
 
 98
 00:06:16,250 --> 00:06:17,160
-of the list
+da lista
 
 99
 00:06:17,160 --> 00:06:20,320
-[1,2,3,4,5] we get
+[1,2,3,4,5] obtemos
 
 100
 00:06:20,320 --> 00:06:24,030
-3. So what do we learn from this?
-Well...
+3. Então, o que aprendemos disto?
+Bem...
 
 101
 00:06:24,030 --> 00:06:27,029
-that the first element of the list
+que o primeiro elemento da lista
 
 102
 00:06:27,029 --> 00:06:29,610
-has index 0.
+tem índice 0.
 
 103
 00:06:29,610 --> 00:06:32,749
-Haskell starts
+Haskell inicia
 
 104
 00:06:32,749 --> 00:06:36,849
-indexing lists by zero.
-There's
+o índice da lista por zero.
+Há
 
 105
 00:06:36,849 --> 00:06:40,409
-2 exclamation marks here and there's
+2 pontos de exclamação aqui e há
 
 106
 00:06:40,409 --> 00:06:44,159
-a good reason for that:
-because in Haskell,
+uma grande razão para isso:
+porque em Haskell,
 
 107
 00:06:44,159 --> 00:06:47,189
-lists are not arrays,
-so indexing
+listas não são arrays,
+então a indexação de
 
 108
 00:06:47,189 --> 00:06:50,909
-into the list here at the second
-element
+uma lista aqui no segundo elemento
 
 109
 00:06:50,909 --> 00:06:54,729
-will traverse the list. So it
-will traverse the list, throw away 1
+atravessará a lista. Então, ela
+atravessará a lista, joga fora 1
 
 110
 00:06:54,729 --> 00:06:59,509
-throw away 2 and then return 3.
-This is not a constant time
+jogar 1 2 e então retorna 3.
+Isto nao é uma operação
 
 111
 00:06:59,509 --> 00:07:04,209
-operation. Indexing into a list, unlike
-indexing into an array,
+com tempo constante. Indexação em uma lista, 
+ao contrário da indexação em uma array,
 
 112
 00:07:04,209 --> 00:07:07,919
-in Haskell is linear in the length
-of the list.
+em Haskell é linear no tamanho
+da lista.
 
 113
 00:07:07,919 --> 00:07:13,099
