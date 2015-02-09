@@ -26,7 +26,7 @@ os tempos
 
 7
 00:00:21,390 --> 00:00:25,890
-é o Karate Kid e se você não viu
+é o Karate Kid e se vocês não viram
 este filme,
 
 8
@@ -55,11 +55,11 @@ talvez
 13
 00:00:44,210 --> 00:00:47,820
 aprendo algo novo.
-Se você
+Se vocês
 
 14
 00:00:47,820 --> 00:00:50,890
-assistir o filme, verá que
+assistirem o filme, verão que
 
 15
 00:00:50,890 --> 00:00:55,500
@@ -83,7 +83,7 @@ são inúteis. E ele fica meio frustrado.
 
 19
 00:01:08,320 --> 00:01:11,400
-Mas afim de aprender algo você tem 
+Mas afim de aprender algo vocês tem
 que ir
 
 20
@@ -93,17 +93,17 @@ uma grande quantidade de memória muscular ou,
 
 21
 00:01:15,650 --> 00:01:20,049
-no caso de programação você deve ter a
-memória muscular em seus dedos.
+no caso de programação vocês deve ter 
+uma memória muscular em seus dedos.
 
 22
 00:01:20,049 --> 00:01:22,950
-São coisas que você não deveria ter que 
+São coisas que vocês não deveria ter que
 pensar.
 
 23
 00:01:22,950 --> 00:01:27,520
-Você tem que insistir. Você tem que
+Vocês tem que insistir. Vocês tem que
 fazer uma e outra e outra vez.
 
 24
@@ -132,13 +132,13 @@ automático
 
 29
 00:01:47,640 --> 00:01:51,450
-e então você pode usar seu cérebro para
+e então podem usar seus cérebros para
 resolver o problema real.
 
 30
 00:01:51,450 --> 00:01:55,649
-Você não tem mais que pensar nos conceitos
-básicos. E toda vez que você aprender
+Vocês não tem mais que pensar nos 
+conceitos básicos. E toda vez que aprenderem
 
 31
 00:01:55,649 --> 00:01:56,549
@@ -146,7 +146,7 @@ algo novo
 
 32
 00:01:56,549 --> 00:02:01,049
-assista este grande filme.
+assistam este grande filme.
 
 33
 00:02:01,049 --> 00:02:05,560
@@ -175,7 +175,7 @@ um REPL loop
 
 38
 00:02:23,540 --> 00:02:26,900
-interativo que você pode usar para 
+interativo que vocês pode usar para
 digitar o seu
 
 39
@@ -203,7 +203,7 @@ Muitos dos exercícios
 
 44
 00:02:44,330 --> 00:02:47,790
-que vocês terão durante o curso,
+que vocês terão durante o curso
 vocês podem fazer
 
 45
@@ -343,7 +343,7 @@ e obtemos 5.
 
 74
 00:04:46,690 --> 00:04:50,100
-Como vocês viram, existe o 
+Como vocês viram, existe o
 Prelude>
 
 75
@@ -548,12 +548,12 @@ indexação de lista
 
 119
 00:07:28,550 --> 00:07:34,180
-então vocês sabem que não fizeram 
+então vocês sabem que não fizeram
 wax on, wax off, wax on, wax off suficiente.
 
 120
 00:07:34,180 --> 00:07:37,569
-Você ainda está muito na mentalidade da
+Vocês ainda está muito na mentalidade da
 
 121
 00:07:37,569 --> 00:07:40,689
@@ -702,7 +702,7 @@ neste slide é inverter  uma lista.
 
 152
 00:09:43,220 --> 00:09:46,260
-Reverse [1,2,3,4,5] dá a você
+Reverse [1,2,3,4,5] dá a vocês
 
 153
 00:09:46,260 --> 00:09:50,380
@@ -730,348 +730,354 @@ para implementa-lás.
 
 158
 00:10:05,040 --> 00:10:08,640
-Then we will know what they are
-supposed to do.
+Então saberemos o que elas 
+deveriam fazer.
 
 159
 00:10:08,640 --> 00:10:12,380
-Here's
+Aqui está
 
 160
 00:10:12,380 --> 00:10:16,260
-another very important slide
+um outro slide muito importante
 
 161
 00:10:16,260 --> 00:10:20,839
-and that is about function application.
+que é sobre aplicação de função.
 Haskell
 
 162
 00:10:20,839 --> 00:10:24,450
-is very different than mathematics on
+é muito diferente de matemática,
+por um lado,
+
 the one side
 
 163
 00:10:24,450 --> 00:10:27,700
-and very different from other
-programming languages as well.
+e muito diferente de outras
+linguagens de programação também.
 
 164
 00:10:27,700 --> 00:10:32,910
-In mathematics when you apply a function -
-mathematics that you do in school or
+Em matemática quando vocês aplicam uma função
+matemática que vocês fazem na escola ouram
 
 165
 00:10:32,910 --> 00:10:34,860
-college when you take analysis -
+na faculdade quando fazem análise -
 
 166
 00:10:34,860 --> 00:10:38,100
-when you apply a function to an argument,
+quando vocês aplicam uma função a um argumento
 
 167
 00:10:38,100 --> 00:10:41,649
-you always use parentheses.
-In this case
+vocês sempre usam parêntesis
+Neste caso
 
 168
 00:10:41,649 --> 00:10:45,100
-when we apply a function here...
-this is
+quando aplicamos uma função aqui...
+Isto é
 
 169
 00:10:45,100 --> 00:10:49,410
-applying a function f to arguments
-a and b
+aplicar uma função f aos argumentos
+a ou b
 
 170
 00:10:49,410 --> 00:10:52,180
-and then adding c
+e então adicionar c
 
 171
 00:10:52,180 --> 00:10:55,910
-space d.
-In mathematics,
+espaço d.
+Em matemática,
 
 172
 00:10:55,910 --> 00:10:59,460
-typically, and that comes from
-physics
+tipicamente, e isso vem da 
+física
 
 173
 00:10:59,460 --> 00:11:03,720
-is that space means multiplication.
+é que espaço significa multiplicação.
 
 174
 00:11:03,720 --> 00:11:07,300
-If you look at the mathematical
-textbook
+Se vocês olharem um livro de
+matemática
 
 175
 00:11:07,300 --> 00:11:11,430
-and you see c d
+e verem c d
 
 176
 00:11:11,430 --> 00:11:14,800
-it usually means c multiplied by d
+isso normalmente significa c multiplicado
+por d
 
 177
 00:11:14,800 --> 00:11:18,480
-and therefore when you apply a function
-you're using
+e portanto, quando vocês aplicam uma função
+estão usando
 
 178
 00:11:18,480 --> 00:11:24,330
-parentheses like this to disambiguate.
-Since in Haskell
+parêntesis como este para não ter ambigüidade.
+Uma vez que em Haskell
 
 179
 00:11:24,330 --> 00:11:27,530
-function application is used much more
-often
+aplicação de função é usada com muita
+mais frequência
 
 180
 00:11:27,530 --> 00:11:30,990
-than multiplication,
-whereas in physics
+do que multiplicação,
+considerando que na física
 
 181
 00:11:30,990 --> 00:11:34,630
-multiplication is used more often, so
-that's where
+multiplicação é usada com mais frequência, então
+é onde
 
 182
 00:11:34,630 --> 00:11:40,080
-multiplication is given the most
-white symbol, the least
+é dado à multiplicação um simbolo
+mais claro, ao menos
 
 183
 00:11:40,080 --> 00:11:43,680
-visible symbol, the most white spacey symbol.
-In Haskell,
+um símbolo mais visível, um símbolo mais amplo.
+Em Haskell,
 
 184
 00:11:43,680 --> 00:11:46,680
-function application is denoted by white
-space
+a aplicação de função é denotada por
+espaço em branco
 
 185
 00:11:46,680 --> 00:11:50,050
-so that it's not so much in
-your face.
+para que não seja muito para
+encarar.
 
 186
 00:11:50,050 --> 00:11:54,050
-So in Haskell instead of writing
+Assim, em Haskell em vez de escrever
 f (a,b) + c d
 
 187
 00:11:54,050 --> 00:11:58,960
-function application
-becomes
+a aplicação de uma função
+torna-se
 
 188
 00:11:58,960 --> 00:12:02,660
-denoted by a space,
-so it's f a b + c * d
+denotada por um espaço,
+assim f a b + c * d
 
 189
 00:12:06,180 --> 00:12:09,540
-In most programming languages
+Na maioria das linguagens de
+programação
 
 190
 00:12:09,540 --> 00:12:13,790
-you would write
+vocês escreveriam
 
 191
 00:12:13,790 --> 00:12:18,540
-f (a, b) so they are in
-some sense the
+f (a, b) então elas são de 
+alguma forma o
 
 192
 00:12:18,540 --> 00:12:23,680
-worst of two worlds: there you
-have to write everything explicit.
+pior de dois mundos:
+vocês tem que escrever tudo explícito
 
 193
 00:12:23,680 --> 00:12:27,970
-In Haskell we made the decision that
-function application
+Em Haskell decidimos que a
+aplicação de função 
 
 194
 00:12:27,970 --> 00:12:31,900
-is done by using a space and
-multiplication
+é feita usando um espaço e 
+a multiplicação
 
 195
 00:12:31,900 --> 00:12:35,500
-is done by using multiplication.
+é feita usando multiplicação.
 
 196
 00:12:35,500 --> 00:12:39,080
-Also,
+Também,
 
 197
 00:12:39,080 --> 00:12:42,480
-function application binds stronger
+aplicaçao de função é mais forte
 
 198
 00:12:42,480 --> 00:12:45,790
-than any other operator.
-If you see
+do que qualquer outro operador.
+Se vocês verem
 
 199
 00:12:45,790 --> 00:12:49,820
-f a + b, that means
-f applied to a
+f a + b, isso significa que
+f aplicado a a
 
 200
 00:12:49,820 --> 00:12:52,970
-plus b,
-It doesn't mean f
+mais b,
+não signifca f
 
 201
 00:12:52,970 --> 00:12:57,250
-applied to (a + b).
+aplicado a (a + b).
 
 202
 00:12:57,250 --> 00:13:01,080
-People have to get used to this.
-This doesn't mean
+As pessoas tem que acostumar com isso,
+Isso não significa
 
 203
 00:13:01,080 --> 00:13:04,210
-f times a plus b.
-It means
+f vezes a mais b.
+Significa
 
 204
 00:13:04,210 --> 00:13:05,350
-f applied
+f aplicado
 
 205
 00:13:05,350 --> 00:13:08,400
-to a plus b.
-So that's
+a a mais b.
+Então, isso é
 
 206
 00:13:08,400 --> 00:13:12,370
-kind of similar to multiplication binding
-stronger than addition.
+semelhante a multiplicação mais forte 
+do que a adição.
 
 207
 00:13:12,370 --> 00:13:16,800
-Here's a table that give you
+Aqui está uma tabela que dá a vocês
 
 208
 00:13:16,800 --> 00:13:20,210
-a couple of more expressions
+mais algumas expressões,
 
 209
 00:13:20,210 --> 00:13:23,410
-on the one side Haskell,
+de um lado Haskell 
 
 210
 00:13:23,410 --> 00:13:27,750
-and on the other side mathematics.
-So this is what you should forget.
+e do outros lado matemática.
+Isto é o que vocês deveriam esquecer
 
 211
 00:13:27,750 --> 00:13:31,240
-I'm going to stand in front of that..this
-is what you should forget.
+Eu vou ficar em frente disso... isto
+é o que vocês deveriam esquecer
 
 212
 00:13:31,240 --> 00:13:34,320
-And this is what you should learn.
+E isto é o que vocês deveriam aprender
 
 213
 00:13:34,320 --> 00:13:38,590
-So forget what's behind me and learn
+Então esqueça o que está atrás de mim
+e aprenda
 
 214
 00:13:38,590 --> 00:13:42,670
-what's on this side.
+o que está deste lado.
 
 215
 00:13:42,670 --> 00:13:45,890
-Instead of f open parentheses x,
-we write
+Em vez de f abre parêntesis x,
+escrevemos
 
 216
 00:13:45,890 --> 00:13:50,420
-f space x. Instead of passing two
-parameters to f
+f espaço x. Em vez de passar dois
+parâmetros para f
 
 217
 00:13:50,420 --> 00:13:55,230
-we apply f to x and then
-apply that result to y.
+aplicamos f à x e então
+aplicamos o resultado à y.
 
 218
 00:13:55,230 --> 00:14:00,540
-Instead of f open parens g, open parens x
-we can write
+Em vez de f abre parêntesis g, abre 
+parêntesis x escrevemos
 
 219
 00:14:00,540 --> 00:14:04,110
-f of g of x and later we'll see
+f de g de x e mais tarde
+veremos 
 
 220
 00:14:04,110 --> 00:14:07,120
-that we can write that using function
-composition
+que podemos escrever isso usando
+composição de função
 
 221
 00:14:07,120 --> 00:14:11,680
-as f composed g.
+como f compoẽm g.
 
 222
 00:14:11,680 --> 00:14:14,940
-the rest of the examples
+o resto dos exemplos
 
 223
 00:14:14,940 --> 00:14:18,720
-should be obvious.
-If you just look at
+deveriam ser óbvio.
+Se vocês apenas olharem
 
 224
 00:14:18,720 --> 00:14:22,680
-shapes of these two - don't try to
-interpret them - you will see that the
+o formato desses dois - não tente
+interpretar eles - vocẽs verão que o
 
 225
 00:14:22,680 --> 00:14:24,300
-Haskell code here
+código Haskell aqui
 
 226
 00:14:24,300 --> 00:14:27,650
-looks much lighter-weight than the code
+parece muito mais leve do que o código
 
 227
 00:14:27,650 --> 00:14:33,070
-on this side. Haskell programmers are
-lazy - we don't want to type too much -
+deste lado. Programadores Haskell são
+preguiçosos - não queremos escrever muito -
 
 228
 00:14:33,070 --> 00:14:36,470
-so this looks much more beautiful
-than this
+então este parece muito mais bonito
+do que este
 
 229
 00:14:36,470 --> 00:14:39,860
-and that's why Haskell's syntax is designed
-the way it is.
+e este é o motivo pelo qual a síntaxe
+de Haskell é projetada do jeito que é.
 
 230
 00:14:39,860 --> 00:14:43,350
-Thank you!.
-This was the end of Part 1.
+Obrigado!.
+Este foi o final da Parte 1.
 
 231
 00:14:43,350 --> 00:14:46,680
-See you in a bit for the remainder of
+Vejo vocês daqui a pouco para
+o restando do
 
 232
 00:14:46,680 --> 00:14:47,320
-chapter 1.
-
+capítulo 1.
