@@ -1,224 +1,225 @@
 1
 00:00:00,919 --> 00:00:05,140
-Welcome back! 
-I hope you have all installed GHC
+Bem-vindos de volta!
+Espero que todos tenham instalado o GHC
 
 2
 00:00:05,140 --> 00:00:08,599
-and played a little bit by typing in
-expressions.
+e brincado um pouco digitando 
+expressões.
 
 3
 00:00:08,599 --> 00:00:13,330
-What we're going to do now is move beyond
-simple expressions
+O que iremos fazer agora é ir
+além de simples expressões
 
 4
 00:00:13,330 --> 00:00:18,350
-and see how we can load full Haskell
-programs
+e ver como podemos carregar
+programas Haskell completos  
 
 5
 00:00:18,350 --> 00:00:23,310
-into GHC. 
-In Haskell, programs are not called
+no GHC. 
+Em Haskell, programas não são chamados
 
 6
 00:00:23,310 --> 00:00:27,260
-programs. Typically Haskell people refer
-to their code
+programas. Normalmente pessoas do Haskell
+referem-se a seus códigos 
 
 7
 00:00:27,260 --> 00:00:30,689
-as scripts because 
+como scripts porque
 
 8
 00:00:30,689 --> 00:00:34,190
-Haskell programs are maybe shorter
-than normal code.
+programas em Haskell são, talvez,
+mais curtos do que código normal.
 
 9
 00:00:34,190 --> 00:00:37,730
-I just call them Haskell programs,
+Eu apenas os chamo de programas 
+Haskell,
 
 10
 00:00:37,730 --> 00:00:41,550
-but the haskell parlance
+mas a linguagem em haskell
 
 11
 00:00:41,550 --> 00:00:44,899
-is scripts.
+é scripts.
 
 12
 00:00:44,899 --> 00:00:50,610
-New functions, if you want to
-define a complete Haskell program,
+Novas funções, se vocês querem
+definir um programa completo em Haskell,
 
 13
 00:00:50,610 --> 00:00:53,870
-you define them in a
+defina elas em um
 
 14
 00:00:53,870 --> 00:00:57,170
-text file that contains a list of function
-definitions
+arquivo texto que contenha uma lista de
+definições de funções
 
 15
 00:00:57,170 --> 00:01:00,840
-and this text file
+e este arquivo texto
 
 16
 00:01:00,840 --> 00:01:06,040
-has a suffix .hs that indicates
-that it's a
+tenha um sufixo .hs que indica
+que é um
 
 17
 00:01:06,040 --> 00:01:10,170
-Haskell file. 
-Just like an HTML file has an
+arquivo Haskell.
+Igual um arquivo HTML tem um
 
 18
 00:01:10,170 --> 00:01:14,340
-.html suffix, or CSS files have .css
+.html sufixo, ou arquivos CSS tem 
 
 19
 00:01:14,340 --> 00:01:17,890
-suffix, or Java file
+sufixo .css, ou arquivo Java
 
 20
 00:01:17,890 --> 00:01:21,350
-has a .java suffix,
+tem um sufixo .java,
 
 21
 00:01:21,350 --> 00:01:25,000
-a Haskell file is called whatever
+um arquivo Haskell é chamado 
+qualquer coisa
 
 22
 00:01:25,000 --> 00:01:29,049
-.hs. So this is not mandatory,
+.hs. Isso não é obrigatório,
 
 23
 00:01:29,049 --> 00:01:32,320
-but it's useful that you can see when you
+mas é útil que vocês possam ver quando 
 
 24
 00:01:32,320 --> 00:01:35,689
-list the files in a directory that you
-can see that this
+listarem os arquivos em um diretório
+possam ver que 
 
 25
 00:01:35,689 --> 00:01:40,210
-is a Haskell script. 
-Now when you
+é um script Haskell. 
+Agora quando vocês
 
 26
 00:01:40,210 --> 00:01:44,430
-are using GHC,
+estiverem usando o GHC,
 
 27
 00:01:44,430 --> 00:01:47,530
-what you do is you edit your
+o que vocês fazem é editar o seu
 
 28
 00:01:47,530 --> 00:01:52,049
-script in one window, using whatever
-editor of choice,
+script em uma janela, usando qualquer
+editor de sua escolha,
 
 29
 00:01:52,049 --> 00:01:55,259
-and then whenever you make a change, you
-load your
+e então sempre que vocês fizerem uma alteração,
+carreguem seu
 
 30
 00:01:55,259 --> 00:01:59,460
-script into GHC and
-start
+script no seu GHC e comecem
 
 31
 00:01:59,460 --> 00:02:03,590
-executing expressions. 
-So that's the kind of workflow
+executar expressões.
+Então, este é o tipo de fluxo
 
 32
 00:02:03,590 --> 00:02:07,369
-that we will be using for most of the
-course. For simple things
+que usaremos na maioria do curso.
+Para coisas simples
 
 33
 00:02:07,369 --> 00:02:12,080
-that's what you. Of course, when you're
-building commercial Haskell applications
+isso é o que vocês fazem. Claro, quando estiverem
+construindo aplicações comerciais em Haskell
 
 34
 00:02:12,080 --> 00:02:13,420
-this is not what you do.
+não é assim que vocês fazem.
 
 35
 00:02:13,420 --> 00:02:16,450
-You will compile them into standalone
-executables,
+Vocês compilarão eles em executáveis
+standalone,
 
 36
 00:02:16,450 --> 00:02:21,550
-but for the purposes of this course, this
-is the workflow: we have
+mas para o propósito deste curso, este
+é o fluxo: temos
 
 37
 00:02:21,550 --> 00:02:25,950
-the editor window open, we have the GHCi
-interpreter open
+a janela do editor aberta, temos o 
+interpretador GHCi aberto
 
 38
 00:02:25,950 --> 00:02:30,150
-and then we will load the scripts.
-In this case,
+e então carregaremos os scripts.
+Neste caso,
 
 39
 00:02:30,150 --> 00:02:33,880
-we will create a
+criaremos um
 
 40
 00:02:33,880 --> 00:02:37,140
-text file test.hs and in there
+arquivo texto test.hs e nele
 
 41
 00:02:37,140 --> 00:02:40,840
-we put two function definitions. 
-The first one:
+definimos duas funções.
+A primeira:
 
 42
 00:02:40,840 --> 00:02:45,380
 double of x equals x + x
-- does what it promises -
+- faz o que promete -
 
 43
 00:02:45,380 --> 00:02:49,890
-and then we can quadruple by
-calling double of double of x.
+e então podemos quadruple
+chamando double of double of x.
 
 44
 00:02:49,890 --> 00:02:55,459
-So we save that file and then
-we start
+Então salvamos aquele arquivo
+e iniciamos o
 
 45
 00:02:55,459 --> 00:02:59,690
-GHCi and invoking it with
+GHCi invocando o ele com
 
 46
 00:02:59,690 --> 00:03:04,400
-test.hs and now both the Haskell
-standard library
+test.hs e agora ambos a biblioteca
+padrão Haskell quanto
 
 47
 00:03:04,400 --> 00:03:08,220
-and the functions quadruple and
-double that we defined
+e as funções quadruple e
+double que definimos
 
 48
 00:03:08,220 --> 00:03:12,030
-in the test.hs will be
-available. For example, we can call
+no test.hs estarão disponíveis.
+Por exemplo, podemos chamar
 
 49
 00:03:12,030 --> 00:03:13,500
