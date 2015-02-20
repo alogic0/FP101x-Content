@@ -189,13 +189,13 @@ A primeira:
 
 42
 00:02:40,840 --> 00:02:45,380
-double of x equals x + x
+dobro de x igual a x + x
 - faz o que promete -
 
 43
 00:02:45,380 --> 00:02:49,890
-e então podemos quadruple
-chamando double of double of x.
+e então podemos quadruplicar
+chamando double de double de x.
 
 44
 00:02:49,890 --> 00:02:55,459
@@ -208,12 +208,12 @@ GHCi invocando o ele com
 
 46
 00:02:59,690 --> 00:03:04,400
-test.hs e agora ambos a biblioteca
+test.hs e agora ambas as bibliotecas
 padrão Haskell quanto
 
 47
 00:03:04,400 --> 00:03:08,220
-e as funções quadruple e
+as funções quadruple e
 double que definimos
 
 48
@@ -223,25 +223,25 @@ Por exemplo, podemos chamar
 
 49
 00:03:12,030 --> 00:03:13,500
-quadruple of 10
+quadruple de 10
 
 50
 00:03:13,500 --> 00:03:16,819
-and it will return 40, but we can also
+e retornará 40, mas podemos também
 
 51
 00:03:16,819 --> 00:03:21,049
-still call all the standard library
-functions. For example
+ainda chamar todas as funções da
+biblioteca padrão. Por exemplo
 
 52
 00:03:21,049 --> 00:03:24,660
-we can take
+podemos pegar
 
 53
 00:03:24,660 --> 00:03:30,070
-double of 2 of this list. Double of 2 is
-4, so this is the same as take 4,
+o dobro de 2 desta lista. Dobro de 2 é
+4, então isto é o mesmo que pegar 4,
 
 54
 00:03:30,070 --> 00:03:30,650
@@ -249,112 +249,113 @@ double of 2 of this list. Double of 2 is
 
 55
 00:03:30,650 --> 00:03:33,820
-so we take the first 4 elements
-of the list.
+então pegamos os primeiros 4 
+elementos da lista.
 
 56
 00:03:33,820 --> 00:03:39,200
-Now what we do
+O que fazemos agora
 
 57
 00:03:39,200 --> 00:03:44,540
-is we just leave GHC open, we
-returnw to our editor and
+é deixar o GHC aberto, retornamos
+ao nosso editor e 
 
 58
 00:03:44,540 --> 00:03:47,579
-add
+adicionamos
 
 59
 00:03:47,579 --> 00:03:51,290
-2 new definitions: one is factorial
+2 novas definições: uma é factorial
 
 60
 00:03:51,290 --> 00:03:56,750
-and the other one is average. 
-Since we're starting here,
+e a outra é average.
+Visto que estamos começando aqui,
 
 61
 00:03:56,750 --> 00:04:01,180
-we are using some syntax that 
-we haven't introduced yet so
+estamos usando alguma sintaxe
+que não introduzimos ainda, então
 
 62
 00:04:01,180 --> 00:04:04,380
-bear with me. 
-So product
+tenham paciência. 
+O produto
 
 63
 00:04:04,380 --> 00:04:08,100
-of 1 to n - this thing here 
+de 1 até n - esta coisa aqui
 
 64
 00:04:08,100 --> 00:04:11,840
-is the list of values 1 up to n -
+é a lista de valores de 1 até n -
 
 65
 00:04:11,840 --> 00:04:16,070
-and then product is the
-standard library function
+e então product é uma função
+da biblioteca padrão
 
 66
 00:04:16,070 --> 00:04:19,169
-that multiplies all the values 
-in a list, so
+que multiplica todos os valores
+em uma lista, assim
 
 67
 00:04:19,169 --> 00:04:24,330
-this is a good definition of factorial.
-Then when we want to calculate the
+esta é uma boa definição de fatorial.
+Quando queremos calcular a
 
 68
 00:04:24,330 --> 00:04:25,480
-average
+média
 
 69
 00:04:25,480 --> 00:04:29,350
-of a list we sum
+de uma lista nós somamos
 
 70
 00:04:29,350 --> 00:04:33,780
-all the elements - the values of the elements -
-and we divide that
+todos os elementos - os valores dos elementos -
+e então dividimos
 
 71
 00:04:33,780 --> 00:04:38,020
-by the length of the list. 
-Of course, this is not a very smart
+pelo comprimento da lista.
+Claro, esta não é uma implementação 
 
 72
 00:04:38,020 --> 00:04:41,780
-implementation of average, but that
-doesn't matter... we're not
+muito inteligente de média, mas isso
+não importa... não estamos
 
 73
 00:04:41,780 --> 00:04:45,750
-here to define average, we're doing
-this to learn
+aqui para definir a função average,
+estamos fazendo isso para aprender
 
 74
 00:04:45,750 --> 00:04:51,220
-GHCi. The thing that we're using here is
-this trick here in Haskell
+GHCi. A coisa que estamos usando aqui é
+este truque aqui em Haskell
 
 75
 00:04:51,220 --> 00:04:55,280
-is that when you put a function name
+é que quando vocês colocam o nome de
+uma função 
 
 76
 00:04:55,280 --> 00:04:59,390
-between these single back quotes,
+entre estas aspas simples,
 
 77
 00:04:59,390 --> 00:05:02,580
-it becomes an infix operator.
+isso torna-se um operador infixo.
 
 78
 00:05:02,580 --> 00:05:06,290
-So if you write
+Então, se vocês escreverem
 
 79
 00:05:06,290 --> 00:05:09,620
@@ -362,67 +363,69 @@ x `f` y
 
 80
 00:05:09,620 --> 00:05:12,900
-that's really just syntactic sugar for
+isto é realmente apenas "syntactic sugar"
+para
 
 81
 00:05:12,900 --> 00:05:18,410
-f x y. Some people like this thing
-as an infix operator,
+f x y. Algumas pessoas gostam destas coisas
+como um operador infixo,
 
 82
 00:05:18,410 --> 00:05:21,640
-others like it just as a regular
-operator
+outras gostam apenas como um operador
+regular
 
 83
 00:05:21,640 --> 00:05:25,690
-- it's your choice. 
-This is syntactic convention. So this is not
+- fica a sua escolha. 
+Isto é "syntactic convention".
+Então isto não é 
 
 84
 00:05:25,690 --> 00:05:26,960
-a string or anything,
+uma string ou qualquer cosa,
 
 85
 00:05:26,960 --> 00:05:31,440
-it's really taking a function and turning
-that into an infix operator.
+é realmente pegar uma função e retornar
+em um operador infixo.
 
 86
 00:05:31,440 --> 00:05:35,290
-Then in GHCi, we call reload
+Então no GHCi, chamamos reload
 
 87
 00:05:35,290 --> 00:05:39,020
-and it will read the file
+e ele irá ler o arquivo
 
 88
 00:05:39,020 --> 00:05:42,920
-test.hs, add all the new bindings that we just
-defined
+test.hs, adicione todos os novos vínculos
+que definimos
 
 89
 00:05:42,920 --> 00:05:46,410
-- that was for factorial, so we can now
-call factorial
+- esta era para o factorial, agora podemos
+chamar factorial
 
 90
 00:05:46,410 --> 00:05:49,610
-and then we can call average as well.
+e então podemos chamar average também.
 
 91
 00:05:49,610 --> 00:05:54,520
-Here you see the workflow:
-you have your GHCi open, your editor
+Aqui vocês veêm o fluxo:
+vocês tem o seu GHCi aberto, seu editor
 
 92
 00:05:54,520 --> 00:05:58,360
-you edit, you call reload, and then you
-can try
+vocês editam, chamam reload, e assim 
+podem testar
 
 93
 00:05:58,360 --> 00:06:03,430
-your code out. 
+vocês códigos. 
 A few syntactic
 
 94
