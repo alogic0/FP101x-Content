@@ -426,305 +426,312 @@ podem testar
 93
 00:05:58,360 --> 00:06:03,430
 vocês códigos. 
-A few syntactic
+Algums coisas 
 
 94
 00:06:03,430 --> 00:06:07,960
-things, or oddities in Haskell:
-functions
+sintáticas, ou esquisitices em Haskell:
+nomes de 
 
 95
 00:06:07,960 --> 00:06:12,480
-and parameter names must begin with
-lower case
+funções e paramêtros deve começar com
+letra
 
 96
 00:06:12,480 --> 00:06:15,730
-letters.
+minúscula.
 
 97
 00:06:15,730 --> 00:06:19,530
-If you define a function, it must be
+Se vocês definem uma função, ela deve
 
 98
 00:06:19,530 --> 00:06:23,010
-of any of these forms. 
-But any of these
+ser de qualquer uma dessa formas.
+Mas qualquer uma dessas
 
 99
 00:06:23,010 --> 00:06:26,720
-starts with a lower case
+começam com uma letra 
 
 100
 00:06:26,720 --> 00:06:30,580
-letter. You can use a regular quotes
+minúscula. Vocês podem usar aspas
+simples
 
 101
 00:06:30,580 --> 00:06:34,310
-if you're too lazy to
-invent a name. That's
+se forem muito preguiçoso para
+inventar um nome. Isso é 
 
 102
 00:06:34,310 --> 00:06:37,950
-something that I often miss in other
-languages, where I just want to say
+algo que eu muita vezes sinto falta em 
+outras linguagens, onde eu apenas quero dizer
 
 103
 00:06:37,950 --> 00:06:38,710
-x prime or
+x prime ou
 
 104
 00:06:38,710 --> 00:06:42,520
-x double prime, et cetera.
+x double prime, etc.
 
 105
 00:06:42,520 --> 00:06:47,210
-If you define a type, a type
-has to start with an
+Se vocês definem um tipo, um tipo
+tem que começar com 
 
 106
 00:06:47,210 --> 00:06:51,710
-uppercase name and that's the
-reason. In Haskell,
+nome maiúsculo e este é o 
+motivo. Em Haskell,
 
 107
 00:06:51,710 --> 00:06:55,130
-the types and identifiers
+os tipos e identificadores
 
 108
 00:06:55,130 --> 00:06:58,180
-are in different namespaces and that's
-determined
+estão em namespaces diferentes e isso
+é determinado
 
 109
 00:06:58,180 --> 00:07:01,620
-by whether it starts with a lower case or
+se ele começa com um identificador
+minúsculo or
 
 110
 00:07:01,620 --> 00:07:05,540
-upper case identifier. That can be
-confusing if you come from a different
+maiúsculo. Isso pode ser 
+confuso se vocês vierem de uma linguagem
 
 111
 00:07:05,540 --> 00:07:06,830
-language like
+diferente como 
 
 112
 00:07:06,830 --> 00:07:10,990
-Java, or C# or JavaScript.
+Java, ou C# ou JavaScript.
 
 113
 00:07:10,990 --> 00:07:15,000
-The other thing is that in
-Haskell we use
+Outra coisa é que em
+Haskell usamos
 
 114
 00:07:15,000 --> 00:07:19,800
-a very mild form of Hungarian
-notation.
+uma forma muito suave de notação
+húgara.
 
 115
 00:07:19,800 --> 00:07:22,930
-If a parameter has an
+Se um paramêtro tem um
 
 116
 00:07:22,930 --> 00:07:27,700
-s suffix, so for example if you have a
-parameter named
+sufixo s, então por exemplo se
+vocês tem um paramêtro nomeado
 
 117
 00:07:27,700 --> 00:07:31,420
-xs or ns or nss,
+xs ou ns ou nss,
 
 118
 00:07:31,420 --> 00:07:35,840
-that means a list of values
+isso significa uma lista de valores
 
 119
 00:07:35,840 --> 00:07:39,640
-of type x and this is a list of
-values
+do tipo x e esta é uma lista de
+valores
 
 120
 00:07:39,640 --> 00:07:44,460
-of type n - sometimes the n doesn't
-correspond to the
+do tipo n - as vezes o n não corresponde
+ao nome
 
 121
 00:07:44,460 --> 00:07:49,360
-type name - but typically when you see an
-s at the end you know that it's a list.
+to tipo - mas normalmente quando vocês vêem um
+s no final vocês sabem que é uma lista.
 
 122
 00:07:49,360 --> 00:07:52,460
-If there's 2 s's at the end 
-- like here -
+Se existir 2 s's no final
+- como aqui -
 
 123
 00:07:52,460 --> 00:07:55,910
-you know that it's a list of lists.
+vocês sabem que é uma lista de listas.
 
 124
 00:07:55,910 --> 00:07:59,630
-Thats by convention. So if you want to
-look like a real Haskell programmer,
+Isso é por convenção. Assim, se vocês querem
+parecer como programadores Haskell de verdade,
 
 125
 00:07:59,630 --> 00:08:03,370
-you should always use this convention.
-When your parameter is a list, 
+vocẽs deveriam sempre usar esta convenção.
+Quando seu paramêtro é uma lista,
 
 126
 00:08:03,370 --> 00:08:07,250
-it always ends with s, and usually
+ele sempre terminar com s, e normalmente
 
 127
 00:08:07,250 --> 00:08:10,410
-Haskell identifiers are short
+identificadores Haskeel são curtos
 
 128
 00:08:10,410 --> 00:08:13,900
-so you don't it elements,
-you call it xs.
+assim, vocês não chamem ele de elements,
+vocês chamem de xs.
 
 129
 00:08:13,900 --> 00:08:17,510
-Another
+Uma outra
 
 130
 00:08:17,510 --> 00:08:21,370
-interesting thing that Haskell has in
-common with by Python
+coisa interessante que Haskell tem em 
+comum com Python
 
 131
 00:08:21,370 --> 00:08:25,050
-is that white space is significant. 
-The
+é que espaços em branco são significantes.
+As
 
 132
 00:08:25,050 --> 00:08:28,100
-exact rules are quite subtle, but
+regras exatas são bastantes sutis, 
+mas
 
 133
 00:08:28,100 --> 00:08:32,350
-we are just using Haskell
+estamos apenas usando Haskell
 
 134
 00:08:32,350 --> 00:08:35,630
-in very simple ways, so this
+de uma forma bem simples, 
+então isso
 
 135
 00:08:35,630 --> 00:08:40,880
-is kind of sufficient. If you have a
-sequence of definitions - like here -
+é o sufficient. Se vocês tem uma
+sequência de definições - como aqui -
 
 136
 00:08:40,880 --> 00:08:44,600
-they all have to start in the same
-column. Here
+elas todas tem que iniciar na mesma
+coluna. Aqui
 
 137
 00:08:44,600 --> 00:08:47,760
-a, b and c all start
+a, b e c, todas começam 
 
 138
 00:08:47,760 --> 00:08:51,230
-in the same column.
-In this case here,
+na mesma coluna.
+Neste caso aqui,
 
 139
 00:08:51,230 --> 00:08:55,300
-b has a space to the left of it,
+b tem um espaço no seu lado esquerdo,
 
 140
 00:08:55,300 --> 00:08:58,780
-so now all these definitions don't start
-in the same column.
+assim, agora todas essas definições não começam
+na mesma coluna.
 
 141
 00:08:58,780 --> 00:09:01,860
-That's wrong! 
-Or in this case, c
+Isso está errado!
+Ou neste caso, c
 
 142
 00:09:01,860 --> 00:09:04,990
-and a don't start in the same column as b..
+e a não iniciam na mesma coluna como b..
 
 143
 00:09:04,990 --> 00:09:08,130
-also wrong.
+também errado.
 
 144
 00:09:08,130 --> 00:09:11,460
-White space is significant in Haskell,
+Espaço em branco é significante em Haskell,
 
 145
 00:09:11,460 --> 00:09:15,600
-so make sure that all your definitions
-are lined up - this is called the layout rule.
+então, certifique-se que todas suas definições
+estão alinhadas - isso é chamado de regra de layout.
 
 146
 00:09:15,600 --> 00:09:19,290
-The layout rule
+A regra the layout
 
 147
 00:09:19,290 --> 00:09:22,660
-is there to avoid writing
+existe para evitar escrever
 
 148
 00:09:22,660 --> 00:09:26,080
-unnecessary syntax. 
-Haskell folks
+sintaxe desnecessária.
+Os caras de Haskell
 
 149
 00:09:26,080 --> 00:09:30,050
-like to write this: 
+gostam de escrever isto:
 a = b + c where
 
 150
 00:09:30,050 --> 00:09:33,510
-and then in the where clause we have
-a list of definitions that
+e então na cláusula where temos
+uma lista de definições que
 
 151
 00:09:33,510 --> 00:09:37,230
-all start in the same column and then d
+começam todas na mesma coluna e então 
+d
 
 152
 00:09:37,230 --> 00:09:40,440
-here stars in the same column as a,
+aqui inicia na mesma coluna como a,
 
 153
 00:09:40,440 --> 00:09:44,060
-so that belongs to the same group
-as a.
+então isso pertence ao mesmo grupo
+como a.
 
 154
 00:09:44,060 --> 00:09:47,950
-You can write this with explicit
+Vocês podem escrever isto com 
+chaves e ponto
 
 155
 00:09:47,950 --> 00:09:51,920
-curly braces and semicolons
-- if you want to -
+e vírgula explicitos
+- se vocês quiserem -
 
 156
 00:09:51,920 --> 00:09:55,700
-but that looks a lot more
+mas isso parece muito mais 
 
 157
 00:09:55,700 --> 00:09:59,850
-verbose. 
-Haskell programmers like brevity,
+verboso. 
+Programadores Haskell gostam de 
+brevidade,
 
 158
 00:09:59,850 --> 00:10:03,110
-so they'll often use significant white
-space.
+então, eles usarão com frequência
+espaços em brancos.
 
 159
 00:10:03,110 --> 00:10:06,640
-This looks a little bit clowny.
+Isto parece um pouco idiota.
 
 160
 00:10:06,640 --> 00:10:10,520
