@@ -735,167 +735,171 @@ Isto parece um pouco idiota.
 
 160
 00:10:06,640 --> 00:10:10,520
-In the Haskell world, when you write code like
-this people will look like
+No mundo Haskell, quando vocês escrevem
+códigos como este, pessoas irão olhar como 
 
 161
 00:10:10,520 --> 00:10:14,090
-"you didn't do enough wax on, wax off".
+“Você não fez wax on, wax off suficiente”.
 
 162
 00:10:14,090 --> 00:10:21,090
-Here's some GHC commands that are
-useful
+Aqui está alguns comandos GHC
+que são uteis
 
 163
 00:10:21,220 --> 00:10:24,330
-and I really
+e eu realmente
 
 164
 00:10:24,330 --> 00:10:29,620
-invite you to play around with it
-When you do the exercises for
+convido vocês a brincarem com ele.
+Quando vocês fazem os exercícios para
 
 165
 00:10:29,620 --> 00:10:33,220
-subsequent lectures, make sure that you
-leverage
+as aulas subseqüentes, certifique-se de que
+vocês aproveitem
 
 166
 00:10:33,220 --> 00:10:36,800
-GHC or whatever other compiler you use,
+o GHC ou qualquer outro compilador
+que usarem,
 
 167
 00:10:36,800 --> 00:10:41,930
-to help you. We have seen
-reload, but you can also just
+para ajudar vocês. Vimos
+reload, mas vocês podem também 
 
 168
 00:10:41,930 --> 00:10:45,820
-load a fresh script.
+carregar (load) um script novo.
 
 169
 00:10:45,820 --> 00:10:49,050
-From the interpreter
+A partir do interpretador
 
 170
 00:10:49,050 --> 00:10:52,430
-you can open the editor, so you can edit
+vocês podem abrir um editor, assim vocês
+pode editar
 
 171
 00:10:52,430 --> 00:10:56,270
-a file with a certain name, 
-or edit the current script.
+um arquivo com um certo nome,
+ou editar o script atual.
 
 172
 00:10:56,270 --> 00:10:59,880
-This one here is super useful:
+Este aqui e super útil:
 
 173
 00:10:59,880 --> 00:11:03,550
-it gives the type of an expression and I do
-this
+ele da o tipo de uma expressão e eu faco
+isso
 
 174
 00:11:03,550 --> 00:11:08,330
-all the time - I never write types myself. 
-I ask what the type is and I go
+o tempo todo - Eu nunca escrevo tipos eu mesmo.
+Eu sempre pergunto qual tipo é e eu vou
 
 175
 00:11:08,330 --> 00:11:11,589
-in the editor and paste in the type.
+no editor e colo o tipo.
 
 176
 00:11:11,589 --> 00:11:15,959
-You definitely should use :?
+Definitivamente vocês deveriam usar :?
 
 177
 00:11:15,959 --> 00:11:19,649
-and that gives you a list of all the
-commands
+que dá á vocês  uma lista de todos 
+os comandos
 
 178
 00:11:19,649 --> 00:11:23,970
-with a small explanation. 
-Of course,
+com uma pequena explicação.
+Claro,
 
 179
 00:11:23,970 --> 00:11:27,350
-I hope that you will not use this
+Eu espero que vocês não usem
+este último
 
 180
 00:11:27,350 --> 00:11:31,079
-last command to quit GHC,
+ comando para sair do GHC,
 
 181
 00:11:31,079 --> 00:11:34,450
-but that you will, for the next
-eight weeks,
+mas este vocês irão, nas próximas
+oito semanas,
 
 182
 00:11:34,450 --> 00:11:39,709
-be constantly using GHC.
+estar constantemente usando 
+o GHC.
 
 183
 00:11:39,709 --> 00:11:43,010
-There will be a lot of exercises
+Haverá muitos exercícios 
 
 184
 00:11:43,010 --> 00:11:46,660
-and the exercises will be on the website.
+e os exercícios estarão no website.
 
 185
 00:11:46,660 --> 00:11:49,680
-All these exercises,
+Todos estes exercícios,
 
 186
 00:11:49,680 --> 00:11:54,510
-you should be able to
-do them in any language. You don't
+vocês deveriam ser capazes de fazer 
+em qualquer linguagem. Vocês não tem
+
 
 187
 00:11:54,510 --> 00:11:55,600
-have to use
+que usar o
 
 188
 00:11:55,600 --> 00:11:59,990
-GHC, but in this case, since this lecture
-is about
+GHC, mas neste caso, uma vez que
+esta aula é sobre 
 
 189
 00:11:59,990 --> 00:12:03,029
-GHC, they will be
+GHC, elas serão
 
 190
 00:12:03,029 --> 00:12:06,610
 GHC-specific. 
-In general,
+Em geral,
 
 191
 00:12:06,610 --> 00:12:10,680
-as I said in the very first lecture, this
-is a course
+como eu disse na primeira aula, este
+e um curso
 
 192
 00:12:10,680 --> 00:12:15,430
-about functional programming. It's not a
-course about Haskell and it's definitely
+sobre programação funcional. Não é um
+curso sobre Haskell e definitivamente
 
 193
 00:12:15,430 --> 00:12:17,320
-not a course about GHC,
+não é um curso sobre GHC.
 
 194
 00:12:17,320 --> 00:12:22,020
-but in this specific case the exercises for
-this chapter and
+Mas neste caso especifico os exercícios
+para este capítulo e
 
 195
 00:12:22,020 --> 00:12:25,250
-for this lecture are on GHCi.
+para esta aula são no GHCi.
 
 196
 00:12:25,250 --> 00:12:29,459
-Happy hacking and 
-see you all next week!
-
+Happy hacking e
+vejo vocês na próxima semana!
