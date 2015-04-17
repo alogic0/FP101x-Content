@@ -342,7 +342,7 @@ just
 
 77
 00:04:49,840 --> 00:04:53,300
-another alias for false. Now let's
+another alias for True. Now let's
 
 78
 00:04:53,300 --> 00:04:57,280
@@ -665,6 +665,7 @@ and False and whatever is False.
 150
 00:09:16,570 --> 00:09:20,170
 Let's see if this is true. True
+
 151
 00:09:20,170 --> 00:09:25,260
 and True equals True. True and
